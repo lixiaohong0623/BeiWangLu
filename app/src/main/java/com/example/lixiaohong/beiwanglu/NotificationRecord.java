@@ -16,8 +16,9 @@ public class NotificationRecord {
   private String contentImageUri;
   private String contentAudioUri;
   private ArrayList<String> menNotify;
+  private int isOvertime;
 
-  public void NotificationDatabase(int id, long dateCreate, long dateNotify, String text, String imageUri, String audioUri, ArrayList<String> men) {
+  public  NotificationRecord(int id, long dateCreate, long dateNotify, String text, String imageUri, String audioUri, ArrayList<String> men, int isOvertime) {
     this.id = id;
     this.dateCreate = dateCreate;
     this.dateNotify = dateNotify;
@@ -25,5 +26,6 @@ public class NotificationRecord {
     this.contentImageUri = imageUri;
     this.contentAudioUri = audioUri;
     this.menNotify = men;
+    this.isOvertime = isOvertime;
   }
 }
