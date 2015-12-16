@@ -1,20 +1,31 @@
 package com.example.lixiaohong.beiwanglu.Activity;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.lixiaohong.beiwanglu.R;
 
+import java.util.List;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends Activity {
+
+  private ViewPager viewPager;
+  private TextView  tvNotify;
+  private TextView  tvWhether;
+  private TextView  tvTopic;
+  private List<Fragment> fragmentList;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
+    initialResources();
   }
 
 
@@ -41,6 +52,10 @@ public class MainActivity extends ActionBarActivity {
   }
 
   private void initialResources(){
+    viewPager = (ViewPager) findViewById(R.id.viewPager);
+    tvNotify  = (TextView) findViewById(R.id.tv_myStaff);
+    tvWhether = (TextView) findViewById(R.id.tv_whether);
+    tvTopic   = (TextView) findViewById(R.id.tv_myTopic);
     
   }
 }
