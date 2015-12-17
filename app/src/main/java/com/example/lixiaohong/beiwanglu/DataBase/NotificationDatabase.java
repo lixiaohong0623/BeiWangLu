@@ -46,6 +46,15 @@ public class NotificationDatabase {
     String sql = "UPDATE " + TABLE_NAME + " set " + IS_OVERTIME + status + " where " + ID + "=" + id;
     sqLiteDatabase.execSQL(sql);
   }
+
+  public Cursor query(String filter, String orderBy){
+    SQLiteDatabase sqLiteDatabase = sqLiteOpenHelper.getWritableDatabase();
+    if (orderBy == null){
+      orderBy = NotificationDatabase.DATE_CREATE + "ACS";
+    }
+    return sqLiteDatabase.query(TABLE_NAME,null,null,null,null,orderBy,null);
+  }
+
   public class Reader {
     private final Cursor cursor;
     public Reader( Cursor cursor) {
