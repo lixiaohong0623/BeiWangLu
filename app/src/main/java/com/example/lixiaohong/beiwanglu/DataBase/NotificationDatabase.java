@@ -18,18 +18,19 @@ public class NotificationDatabase {
   private Context context;
   private SQLiteOpenHelper sqLiteOpenHelper;
   private static final String TAG = "NotificationDatabase";
-  private static final String TABLE_NAME    = "notification";
-  private static final String ID             = "_id";
-  private static final String DATE_CREATE   = "date_create";
-  private static final String DATE_NOTIFY   = "date_notify";
-  private static final String CONTENT_TEXT  = "content_text";
-  private static final String CONTENT_IMAGE = "content_image";
-  private static final String CONTENT_AUDIO = "content_audio";
-  private static final String MEM_NOTIFY    = "men_notify";
-  private static final String IS_OVERTIME   = "is_overtime";
+  private static final String TABLE_NAME   = "notification";
+  public static final String ID             = "_id";
+  public static final String DATE_CREATE   = "date_create";
+  public static final String DATE_NOTIFY   = "date_notify";
+  public static final String CONTENT_TEXT  = "content_text";
+  public static final String CONTENT_IMAGE = "content_image";
+  public static final String CONTENT_AUDIO = "content_audio";
+  public static final String MEM_NOTIFY    = "men_notify";
+  public static final String IS_OVERTIME   = "is_overtime";
+  public static final String HAS_ALARM     = "has_alarm";
   public static final String CREATE_TABLE   = "CREATE TABLE " + TABLE_NAME + "(" + ID + "INTEGER PRIMARY KEY, " + DATE_CREATE +
           "INTEGER, " + DATE_NOTIFY + "INTEGER, " + CONTENT_TEXT + "TEXT, " + CONTENT_IMAGE +"TEXT, "+CONTENT_AUDIO+"TEXT, "+
-          MEM_NOTIFY +"TEXT );";
+          HAS_ALARM+"INTEGER, "+MEM_NOTIFY +"TEXT );";
 
   public NotificationDatabase(Context context, SQLiteOpenHelper sqLiteOpenHelper) {
     this.context = context;
