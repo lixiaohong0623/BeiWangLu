@@ -1,11 +1,11 @@
 package com.example.lixiaohong.beiwanglu.Activity;
 
 
-import android.app.ListFragment;
 import android.app.LoaderManager;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.widget.CursorAdapter;
 
 import com.example.lixiaohong.beiwanglu.NotificationAdapter;

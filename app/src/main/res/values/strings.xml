@@ -4,5 +4,6 @@
     <string name="app_name">BeiWanglu</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="MainActivity_action_add_new_notification">Add new notification</string>
 
 </resources>
