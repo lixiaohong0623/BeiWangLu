@@ -1,6 +1,5 @@
 package com.example.lixiaohong.beiwanglu.Activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.example.lixiaohong.beiwanglu.R;
@@ -42,10 +41,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     // Inflate the menu; this adds items to the action bar if it is present.
-    MenuInflater inflater = this.getMenuInflater();
-    menu.clear();
-    inflater.inflate(R.menu.menu_main, menu);
-    super.onPrepareOptionsMenu(menu);
+    getMenuInflater().inflate(R.menu.menu_main, menu);
     return true;
   }
 
