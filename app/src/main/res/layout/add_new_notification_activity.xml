@@ -12,11 +12,16 @@
         android:layout_marginLeft="5dp"
         android:textAppearance="?android:textAppearanceMedium"/>
     <TextView
-        android:id="@+id/tv_temp"
+        android:id="@+id/tv_temp_show"
         android:layout_above="@+id/input_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
     <LinearLayout
         android:id="@+id/input_layout"
         android:layout_width = "match_parent"
@@ -35,7 +40,7 @@
             android:background="@drawable/add_new_staff_voice"/>
         <EditText
             android:id="@+id/et_text"
-            android:layout_width="0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/edit_shape"
