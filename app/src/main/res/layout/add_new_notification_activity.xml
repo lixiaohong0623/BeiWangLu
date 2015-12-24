@@ -12,6 +12,24 @@
         android:layout_marginLeft="5dp"
         android:textAppearance="?android:textAppearanceMedium"/>
     <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@+id/save"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="保存"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_selector"/>
+    <TextView
         android:id="@+id/tv_temp_show"
         android:layout_above="@+id/input_layout"
         android:layout_width="wrap_content"
