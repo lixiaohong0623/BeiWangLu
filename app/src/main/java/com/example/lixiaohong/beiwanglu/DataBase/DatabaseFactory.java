@@ -50,7 +50,6 @@ public class DatabaseFactory {
     @Override
     public void onCreate(SQLiteDatabase db) {
       db.execSQL(NotificationDatabase.CREATE_TABLE);
-
     }
 
 

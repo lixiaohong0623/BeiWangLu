@@ -9,10 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.TextView;
 
 import com.example.lixiaohong.beiwanglu.R;
@@ -61,6 +59,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     return super.onOptionsItemSelected(item);
   }
+
+
 
   private void initialResources(){
     viewPager = (ViewPager) findViewById(R.id.viewPager);
@@ -126,6 +126,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     Intent intent = new Intent(MainActivity.this,AddNewNotificationActivity.class);
     startActivity(intent);
   }
+
   public void onClick( View view) {
     switch (view.getId()){
       case R.id.tv_myStaff:
